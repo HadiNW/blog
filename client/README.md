@@ -1,4 +1,8 @@
 # client
+## Deploy
+```
+http://blog-client.hadinw.online/
+```
 
 ## Project setup
 ```

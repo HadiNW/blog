@@ -1,5 +1,5 @@
 const config = {
-    host: 'http://localhost:3000'
+    host: 'http://35.231.242.76'
 }
 
 export default config
