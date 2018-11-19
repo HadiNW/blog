@@ -6,7 +6,11 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const router = require('./routes/')
 // +process.env.NODE_ENV||''
-mongoose.connect('mongodb://localhost/blog-app', {
+// mongoose.connect('mongodb://localhost/blog-app', {
+//     useNewUrlParser: true
+// })
+const mongodUri = `mongodb://${process.env.MLAB_USER}:${process.env.MLAB_PASSWORD}@ds211724.mlab.com:11724/blog`
+mongoose.connect(mongodUri, {
     useNewUrlParser: true
 })
     .then(_ => {
